@@ -1986,12 +1986,11 @@ body.website-open .opening {
 ===================================================== */
 
 .date-section {
-    min-height: 100vh;
+    min-height: auto;
 
     position: relative;
 
-    padding:
-        90px 20px 100px;
+    padding: 45px 20px 40px;
 
     background:
         linear-gradient(
