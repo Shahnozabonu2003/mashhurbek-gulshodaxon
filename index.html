@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Mashhurbek & Gulshodaxon</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================================
+         OPENING ENVELOPE
+    ========================================== -->
+<audio id="weddingMusic">
+    <source src="assets/music.mp3" type="audio/mpeg">
+</audio>
+<button id="musicToggle" class="music-toggle" aria-label="Music">
+    🔊
+</button>
+    <section class="opening" id="opening">
+
+        <div class="envelope" id="envelope">
+
+            <!-- Envelope body -->
+            <div class="envelope-body">
+
+                <!-- Decorative flowers -->
+                <div class="flower flower-left-top">❀</div>
+                <div class="flower flower-right-top">❀</div>
+
+                <div class="flower flower-left-bottom">❀</div>
+                <div class="flower flower-right-bottom">❀</div>
+
+            </div>
+
+
+            <!-- Envelope flap -->
+            <div class="flap" id="flap"></div>
+
+
+            <!-- Wax seal -->
+            <button
+                class="seal"
+                id="seal"
+                aria-label="Open invitation"
+            >
+
+                <span class="initial">M</span>
+
+                <span class="amp">&amp;</span>
+
+                <span class="initial">G</span>
+
+            </button>
+
+        </div>
+
+
+        <!-- Hint -->
+        <div class="open-text">
+            <span>Tap to open</span>
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         WEDDING WEBSITE
+    ========================================== -->
+
+   <main class="website" id="website">
+
+    <!-- =========================================
+         HERO
+    ========================================== -->
+
+    <section class="hero-page">
+    <img
+        src="assets/hero.png"
+        alt="Mashhurbek va Gulshodaxon"
+        class="hero-background"
+    >
+</section>
+      
+      
+    <!-- =========================================
+         THE DATE
+    ========================================== -->
+
+    <section class="date-section reveal">
+
+    <div class="date-decoration top">
+        <span>✿</span>
+        <span>❀</span>
+    </div>
+
+    <p class="section-kicker">
+        A SPECIAL DAY
+    </p>
+
+    <h2 class="date-title">
+        The Date
+    </h2>
+
+    <p class="scratch-title">
+        ✦ Scratch to reveal the date ✦
+    </p>
+
+
+    <div class="scratch-dates">
+
+        <!-- DAY -->
+        <div class="scratch-column">
+
+            <div class="scratch-card">
+
+                <div class="revealed-date">
+                    <strong>11</strong>
+                </div>
+
+                <canvas
+                    class="scratch-canvas"
+                    width="300"
+                    height="260"
+                    data-type="day">
+                </canvas>
+
+            </div>
+
+            <span class="scratch-label">
+                D A Y
+            </span>
+
+        </div>
+
+
+        <!-- MONTH -->
+        <div class="scratch-column">
+
+            <div class="scratch-card">
+
+                <div class="revealed-date month">
+                    <strong>OCTOBER</strong>
+                </div>
+
+                <canvas
+                    class="scratch-canvas"
+                    width="300"
+                    height="260"
+                    data-type="month">
+                </canvas>
+
+            </div>
+
+            <span class="scratch-label">
+                M O N T H
+            </span>
+
+        </div>
+
+
+        <!-- YEAR -->
+        <div class="scratch-column">
+
+            <div class="scratch-card">
+
+                <div class="revealed-date">
+                    <strong>2026</strong>
+                </div>
+
+                <canvas
+                    class="scratch-canvas"
+                    width="300"
+                    height="260"
+                    data-type="year">
+                </canvas>
+
+            </div>
+
+            <span class="scratch-label">
+                Y E A R
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <!-- COUNTDOWN -->
+
+    <div class="date-countdown">
+
+        <p>
+            OUR SPECIAL DAY IS IN
+        </p>
+
+        <div class="date-count-number">
+
+            <strong id="dateDays">
+                000
+            </strong>
+
+            <span>
+                DAYS
+            </span>
+
+        </div>
+
+        <small>
+            until 10 October 2026
+        </small>
+
+    </div>
+
+
+    <div class="date-decoration bottom">
+        <span>❀</span>
+    </div>
+
+</section>
+      
+
+
+
+
+
+    <!-- =========================================
+         NIKKAH
+    ========================================== -->
+
+    <section class="nikkah-section reveal">
+
+        <div class="ornament-frame">
+
+            <div class="frame-corner corner-tl"></div>
+            <div class="frame-corner corner-tr"></div>
+            <div class="frame-corner corner-bl"></div>
+            <div class="frame-corner corner-br"></div>
+
+            <div class="nikkah-content">
+
+                <div class="arabic large">
+                    بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ
+                </div>
+
+                <p class="nikkah-title">
+                    Sizni quvonch bilan taklif qilamiZ
+                    <br>
+                    NIKOH TO'YIMIZGA
+                </p>
+
+                <h2>
+                    Mashhurbek
+                </h2>
+
+                
+
+                <div class="mini-line">✦</div>
+
+                <p class="with">
+                    &
+                </p>
+
+                <h2>
+                    Gulshodaxon
+                </h2>
+
+                
+
+                <div class="gold-rule"></div>
+
+                <p class="invitation-text">
+                    Aziz do‘stlar va yaqinlar!
+                    <br><br>
+                    Sizni hayotimizdagi eng go‘zal
+                    kunlardan birini biz bilan
+                    birga nishonlashga taklif qilamiz.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         QUOTE
+    ========================================== -->
+
+    <section class="quote-section reveal">
+
+        <div class="quote-decoration">
+            ✦
+        </div>
+
+        <p class="arabic-quote">
+            وَخَلَقْنَاكُمْ أَزْوَاجًا
+        </p>
+
+        <p class="quote">
+            “Va biz sizlarni juft-juft qilib yaratdik.”
+        </p>
+
+        <p class="quote-source">
+            Surah An-Naba 78:8
+        </p>
+
+    </section>
+
+
+
+    <!-- =========================================
+         TIMELINE
+    ========================================== -->
+<div class="timeline">
+
+    <div class="timeline-flower">
+        ❀
+    </div>
+
+    <div class="timeline-item left reveal">
+        <div class="timeline-card">
+            <div class="timeline-time">11:30</div>
+            <h3>To‘yxona oldiga yig‘ilish</h3>
+            <p>
+                Aziz mehmonlarimizni to‘yxonamiz oldida
+                kutib qolamiz.
+            </p>
+        </div>
+    </div>
+
+    <div class="timeline-item right reveal">
+        <div class="timeline-card">
+            <div class="timeline-time">12:00</div>
+            <h3>Bazm boshlanishi</h3>
+            <p>
+                To‘y bazmimiz o‘zining go‘zal lahzalari
+                bilan boshlanadi.
+            </p>
+        </div>
+    </div>
+
+    <div class="timeline-item left reveal">
+        <div class="timeline-card">
+            <div class="timeline-time">12:30</div>
+            <h3>Tabriklar</h3>
+            <p>
+                Yangi oila egalariga ezgu tilaklar
+                va samimiy tabriklar.
+            </p>
+        </div>
+    </div>
+
+</div>
+            
+                
+
+
+    </section>
+
+
+
+    <!-- =========================================
+         COUNTDOWN
+    ========================================== -->
+
+    <section class="countdown-section reveal">
+
+        <p class="section-kicker">
+            COUNTING THE MOMENTS
+        </p>
+
+        <h2>
+            The Celebration Begins
+        </h2>
+
+        <div class="countdown">
+
+            <div class="count-box">
+                <strong id="days">000</strong>
+                <span>DAYS</span>
+            </div>
+
+            <div class="count-box">
+                <strong id="hours">00</strong>
+                <span>HOURS</span>
+            </div>
+
+            <div class="count-box">
+                <strong id="minutes">00</strong>
+                <span>MINUTES</span>
+            </div>
+
+            <div class="count-box">
+                <strong id="seconds">00</strong>
+                <span>SECONDS</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         LOCATION
+    ========================================== -->
+<section class="location-section reveal">
+
+    <p class="section-kicker">LOCATION</p>
+
+    <h2>Grand Hall</h2>
+
+    <div class="location-venue-image">
+        <img
+            src="assets/grand-hall.png"
+            alt="Grand Hall To‘yxonasi"
+        >
+    </div>
+
+    <div class="location-info">
+
+        <p class="city">XO‘JAOBOD</p>
+
+        <h3>Grand Hall To‘yxonasi</h3>
+
+        <div class="location-line"></div>
+
+        <p class="location-time">
+            11 OKTABR 2026
+            <br>
+            SOAT 11:00
+        </p>
+
+    </div>
+
+    <div class="map-box">
+    <iframe
+        src="https://yandex.ru/map-widget/v1/?ll=72.659570%2C40.617920&z=18&pt=72.659570%2C40.617920%2Cpm2rdm"
+        width="100%"
+        height="100%"
+        frameborder="0"
+        allowfullscreen="true">
+    </iframe>
+</div>
+
+    <button
+        class="map-button"
+        type="button"
+        onclick="openMap()">
+        XARITADA KO‘RISH
+    </button>
+
+</section>
+          
+
+    <!-- =========================================
+         FINAL
+    ========================================== -->
+
+    <section class="final-section reveal">
+
+        <div class="final-flowers">
+            ❀　✿　❀
+        </div>
+
+        <p>
+            With love,
+        </p>
+
+        <h2>
+            Mashhurbek
+            <span>&amp;</span>
+            Gulshodaxon
+        </h2>
+
+        <div class="final-date">
+            11 · 10 · 2026
+        </div>
+
+        <p class="final-message">
+            Biz bilan birga bo‘lib,
+            bu kunimizni yanada go‘zal
+            qilganingiz uchun tashakkur.
+        </p>
+
+        <div class="final-heart">
+            ♡
+        </div>
+
+    </section>
+
+
+</main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html> 
