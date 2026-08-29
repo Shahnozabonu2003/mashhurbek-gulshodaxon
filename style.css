@@ -776,7 +776,7 @@ body.website-open .opening {
 /* cards */
 
 .timeline-card {
-    padding: 20px 22px;
+    padding: 40px 42%;
 
     background: rgba(255,255,255,.22);
 
@@ -3042,4 +3042,146 @@ body.website-open .opening {
         width: 94vw;
         height: 250px;
     }
+}
+
+/* =====================================================
+   PREMIUM OPENING ENTRANCE ANIMATION
+===================================================== */
+
+/* Sahifa ochilganda konvert uzoqdan kelib, yumshoq paydo bo'ladi */
+.envelope {
+    opacity: 0;
+    transform:
+        translateY(35px)
+        scale(.82)
+        rotateX(8deg);
+
+    animation:
+        envelopeEntrance 1.5s
+        cubic-bezier(.16,.84,.25,1)
+        .25s forwards;
+}
+
+/* Seal ham alohida yumshoq paydo bo'ladi */
+.seal {
+    opacity: 0;
+    animation:
+        sealEntrance 1s
+        cubic-bezier(.16,.84,.25,1)
+        1s forwards;
+}
+
+/* Pastdagi TAP TO OPEN yozuvi */
+.open-text {
+    opacity: 0;
+    animation:
+        openTextEntrance 1s
+        ease
+        1.35s forwards,
+        breathe 2.2s ease-in-out 2.35s infinite;
+}
+
+
+/* Envelope entrance */
+@keyframes envelopeEntrance {
+
+    0% {
+        opacity: 0;
+        transform:
+            translateY(35px)
+            scale(.82)
+            rotateX(8deg);
+        filter:
+            drop-shadow(
+                0 10px 12px
+                rgba(86,65,38,.08)
+            );
+    }
+
+    60% {
+        opacity: 1;
+        transform:
+            translateY(-5px)
+            scale(1.025)
+            rotateX(0deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform:
+            translateY(0)
+            scale(1)
+            rotateX(0deg);
+        filter:
+            drop-shadow(
+                0 30px 30px
+                var(--shadow)
+            );
+    }
+}
+
+
+/* Seal entrance */
+@keyframes sealEntrance {
+
+    0% {
+        opacity: 0;
+        transform:
+            translate(-50%, -50%)
+            translateZ(100px)
+            scale(.65);
+    }
+
+    70% {
+        opacity: 1;
+        transform:
+            translate(-50%, -50%)
+            translateZ(100px)
+            scale(1.08);
+    }
+
+    100% {
+        opacity: 1;
+        transform:
+            translate(-50%, -50%)
+            translateZ(100px)
+            scale(1);
+    }
+}
+
+
+/* Tap to open */
+@keyframes openTextEntrance {
+
+    0% {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    100% {
+        opacity: .8;
+        transform: translateY(0);
+    }
+}
+
+
+/* =====================================================
+   ENVELOPE — SLIGHTLY LARGER
+===================================================== */
+
+.envelope {
+    width: min(94vw, 560px);
+    height: min(132vw, 750px);
+}
+
+
+/* MOBILE */
+@media (max-width: 600px) {
+
+    .envelope {
+        width: 94vw;
+        height: 132vw;
+        max-height: 82vh;
+    }
+
 }
